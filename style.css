@@ -16,7 +16,7 @@ display: flex;
 width: 80%;
 margin: 0 auto;
 padding: 22px 24px;
-align-items: center;
+align-items: start;
 }
 
 .navbar-logo img{
@@ -33,7 +33,9 @@ color: #fff;
 cursor: pointer;
 
 }
-
+.navbar-switcher{
+/* align-self: center; */
+}
 .navbar-switcher img{
 width: 70px;
 }
@@ -356,7 +358,7 @@ text-align: center;
     gap: 20px;
 }
 .First-name-last-name-parent input{
-outline: none;
+outline: none !important;
 padding: 16.5px 14px;
 background: transparent;
 flex: 1;
@@ -364,6 +366,9 @@ border: 1px solid #1d1717;
 margin-bottom: 20px;
 border-radius: 8px;
 color: #fff;
+}
+.First-name-last-name-parent input:focus , .email-parent input:focus ,.message-parent textarea:focus{
+    border: 1px solid #553eee !important;
 }
 
 .email-parent input{
@@ -719,9 +724,9 @@ width: 60px;
     margin: 0 auto;
 }
 .Contact-form{
-    margin-left: 0;
-    margin-right: 0;
+ margin: 0;
     width: 100%;
+    padding: 30px 24px 20px;
 }
 .First-name-last-name-parent{
     display: flex;
@@ -789,6 +794,9 @@ right: 0px;
 display: none;
 
 
+}
+.footer-section-2 ul{
+    padding: 0 0 0 40px !important;
 }
 .footer-section-2 ul li{
 margin-bottom: 15px;
